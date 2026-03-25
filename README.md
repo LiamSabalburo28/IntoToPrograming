@@ -1,3 +1,3 @@
 # Into To Programing
-Assignments found in Assignments Folder
-\nPractice scripts found in Practice
+Assignments found in Assignments Folder,
+Practice scripts found in Practice
