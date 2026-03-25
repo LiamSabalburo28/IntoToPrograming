@@ -8,7 +8,7 @@ print("Oxygen Tanks : " + oxytank)
 print("Food Packs : " + foodpack)
 print("Water Packs : " + waterpack)
 
-oxytank = input(" Recheck Oxygen Tanks: ")
+oxytank = input("Recheck Oxygen Tanks: ")
 
 print("Countdown: " + countdown)
 print("Oxygen Tanks : " + oxytank)
