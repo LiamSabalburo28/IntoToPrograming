@@ -23,8 +23,6 @@ def CollegeChoice():
     else:
         print("Invalid choice. Please try again")
 
-
-
 def loreholdstart():
     print("You awaken in your dorm.\nVaroius books line your bookshelves. Most of which are about various civilizations across the planes.")
     print("As you exit your dorm to go to the first lecture of the day, you see an unusual door at the end of the hallway.")
