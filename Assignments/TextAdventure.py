@@ -110,21 +110,25 @@ def quandrixstart():
     print("As you rush out of your dorm you see a door at the end of the hallway.")
     print("Do you,")
     print("A.) Investigate the door")
-    print("B.) Go grab a friend")
-    print("C.) Go to your lecture")
+    print("B.) Go to your lecture")
 
     choice = input("> ")
     if choice == "A":
         quanddoor()
     elif choice == "B":
-        quanfrienddoor()
-    elif choice == "C":
         quandrixend()
     else:
         print("Invalid choice. Pleas try again.")
         quandrixstart()
 
+def quanddoor():
+    print("You go up to the door and decide to investigate. The door appears to match the other doors lading into your classmates dorms.")
+    print("What do you do?")
+    print("1.) Go to your lecture")
+    print("2.) Open the door")
 
+    choice = input("> ")
+    if choice == "1":
 
 def house1():
     print("You open the door. Inside is an abandoned hallway. On the walls are pictures of a happy family.")
