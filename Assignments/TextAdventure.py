@@ -5,9 +5,8 @@ def CollegeChoice():
     print("1.) Lorehold (Histoy)")
     print("2.) Prismari (The Arts)")
     print("3.) Quandrix (Mathematics)")
-    print("4.) Silverquill (Politics)")
+    print("4.) Silverquill (Politics/Law)")
     print("5.) Witherbloom (Plants/Biology)")
-
 
     choice = input("> ")
     if choice == "1":
@@ -79,7 +78,6 @@ def prismaristart():
         print("Invalid choice. Please try again.")
         prismaristart()
 
-
 def prisend():
     print("You decide that this interesting looking door can wait for later.")
     print("You turn in your script and get an 92%.")
@@ -105,6 +103,7 @@ def pris2():
         print("Invalid choice. Please try again.")
         pris2()
 
+
 def quandrixstart():
     print("You awaken at your desk surrounded by your textbooks. You check the time and realize you have about 30 minutes to get to the first lecture of the day.")
     print("As you rush out of your dorm you see a door at the end of the hallway.")
@@ -129,6 +128,57 @@ def quanddoor():
 
     choice = input("> ")
     if choice == "1":
+        quandrixend()
+    elif choice == "2":
+        house1()
+    else:
+        print("Invalid choice. Please try again")
+        quanddoor()
+
+def quandrixend():
+    print("You decide to ignore the door and head to your lecture. As you are rushing down the stairs, you miss a step and tumble down the stairs.\nYou end up breaking your neck and die.")
+    print("YOU HAVE DIED")
+
+
+def silverquillstart():
+    print("You wake up in your bed in your silk pajamas. Today you have an in class debate about the ethics of using constructs for labour. As you have your perfectly made breakfast with your perfectly made coffee, you review your notes on the debate.")
+    print("As you walk out the door and head ot the assigned lecture hall, you see a ornate looking door at the end of the hallway.")
+    print("What do you do?")
+    print("1.) Investigate the door")
+    print("2.) Head to the debate")
+
+    choice = input("> ")
+    if choice == "1":
+        silverdoor()
+    elif choice == "2":
+        silverend()
+    else:
+        print("Invalid choice. Please try again.")
+        silverquillstart()
+
+def silverdoor():
+    print("The door appears to be made of mahogany. The doorknob is made out of mithril.")
+    print("What do you do?")
+    print("1.) Go to your lecture")
+    print("2.) Open this really nice door")
+
+    choice = input("> ")
+    if choice == "1":
+        silverend()
+    elif choice == "2":
+        house1()
+    else:
+        print("Invalid choice. Please try again")
+        silverdoor()
+
+def silverend():
+    print("You decide to ignore the door. You head to your debate and absolutley destroy your opponent.")
+    print("You have acchived the debatable ending.")
+              
+
+
+def witherbloomstart():
+    print("")
 
 def house1():
     print("You open the door. Inside is an abandoned hallway. On the walls are pictures of a happy family.")
