@@ -105,6 +105,40 @@ def pris2():
         print("Invalid choice. Please try again.")
         pris2()
 
+def quandrixstart():
+    print("You awaken at your desk surrounded by your textbooks. You check the time and realize you have about 30 minutes to get to the first lecture of the day.")
+    print("As you rush out of your dorm you see a door at the end of the hallway.")
+    print("Do you,")
+    print("A.) Investigate the door")
+    print("B.) Go grab a friend")
+    print("C.) Go to your lecture")
+
+    choice = input("> ")
+    if choice == "A":
+        quanddoor()
+    elif choice == "B":
+        quanfrienddoor()
+    elif choice == "C":
+        quandrixend()
+    else:
+        print("Invalid choice. Pleas try again.")
+        quandrixstart()
+
+
 
 def house1():
-    print("You open the door.")
+    print("You open the door. Inside is an abandoned hallway. On the walls are pictures of a happy family.")
+    print("What do you do?")
+    print("1.) Proceed")
+    print("2.) Thats an ominous looking hallway, I'm not going in.")
+
+    choice = input("> ")
+    if choice == "1":
+        house2()
+    elif choice == "2":
+        forcedenter()
+    else:
+        print("Invalid choice. Please try again.")
+        house1()
+
+
