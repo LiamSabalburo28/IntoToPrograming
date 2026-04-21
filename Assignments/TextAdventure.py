@@ -62,6 +62,7 @@ def lore2():
         print("Invalid choice. Please try again")
         lore2()
 
+
 def prismaristart():
     print("You awaken in your dorm feeling exhausted.\nLast night was particularly rough, because you stayed up until four in the morning writing a script that is due today. ")
     print("As you grab your completed script and head out the door, you see a door covered in red and blue paint at the end of the hallway.")
@@ -89,3 +90,21 @@ def prisend():
 
 def pris2():
     print("You aproach the door.")
+    print("The door is covered in miniature paitings of moths.")
+    print("The doorknob is very ornate.")
+    print("What do you do?")
+    print("1.) Open the door")
+    print("2.) Go to turn in your script")
+
+    choice = input("> ")
+    if choice == "1":
+        prisend()
+    elif choice == "2":
+        house1()
+    else:
+        print("Invalid choice. Please try again.")
+        pris2()
+
+
+def house1():
+    print("You open the door.")
