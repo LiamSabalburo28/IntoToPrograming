@@ -237,7 +237,7 @@ def house2():
     print("As you travel down the hallway you come to a three way for in the hallway.")
     sleep (1); print("Which way do you go?")
     print("1.) Left")
-    print("2.) Straight")
+    print("2.) Forward")
     print("3.) Right")
     print("4.) Back the way you came")
 
