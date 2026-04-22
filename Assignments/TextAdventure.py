@@ -315,6 +315,21 @@ def locker():
 
 def pool():
     print("You push open the door and find an olympic sized pool")
+    print("What do you do?")
+    print("1.) Go swimming")
+    print("2.) Check the water")
+    print("3.) Go back to the locker room")
+
+    choice = input("> ")
+    if choice == "1":
+        poolend()
+    elif choice == "2":
+        poolcheck()
+    elif choice == "3":
+        pooltolocker()
+    else:
+        print("Invalid choice. Please try again.")
+        pool()
 
 
 CollegeChoice()
