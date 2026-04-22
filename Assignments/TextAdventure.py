@@ -21,6 +21,8 @@ def CollegeChoice():
         silverquillstart() # sends to the start of the silverquil storyline
     elif choice == "5":
         witherbloomstart() #sends to the start of the witherbloom storyline
+    elif choice == "developer options":
+        devop()
     else:
         print("Invalid choice. Please try again") #restarts the function if an answer not defined is chosen
         CollegeChoice()
@@ -356,8 +358,61 @@ def pool():
 def lockerpuzzle():
     print("The locker you stopped in front of has a three number lock.")
     print("What is the code?")
-    
+    print("1.) 18-36-11")
+    print("2.) 22-01-33")
+    print("3.) 05-09-16")
+    print("4.) 06-06-06")
 
+    choice = input("> ")
+    if choice == "1":
+        print("The lock didnt budge.")
+        print("Try again? (yes or no)")
+        yesno()
+    elif choice == "2":
+        print("The lock didnt budge.")
+        print("Try again? (yes or no)")
+        yesno()
+    elif choice == "3":
+        print("The lock didnt budge.")
+        print("Try again? (yes or no)")
+        yesno()
+    elif choice == "4":
+        print("The lock opened")
+        openlocker()
+    elif choice == "open":
+        sleep(10); print("You are sneaky. I'll open the locker this time...")
+        openlocker()
+    else:
+        print("Invalid choice. Please try again.")
+        lockerpuzzle()
+        
+def yesno():
+    answer = input("> ")
+    if answer == "yes":
+            locker2()
+    elif answer == "no":
+            no()
+    else:
+            print("Invalid choice. Please try again.")
+
+def no():
+        print("What will you do now?")
+        print("1.) Go to the pool")
+        print("2.) Go back to the fork")
+        option = input("> ")
+        if option == "1":
+            pool()
+        elif option == "2":
+            fork()
+        else:
+            print("Invalid choice. Please try again.")
+            no()
+
+def openlocker():
+    print
+
+def locker2():
+    print
 
 
 CollegeChoice()
