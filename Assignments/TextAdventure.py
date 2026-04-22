@@ -1,4 +1,6 @@
 import random
+import time
+from time import sleep
 
 def CollegeChoice():
     print("Pick a college:")
@@ -10,17 +12,17 @@ def CollegeChoice():
 
     choice = input("> ")
     if choice == "1":
-        loreholdstart()
+        loreholdstart() #sends to the start of the lorehold storyline
     elif choice == "2":
-        prismaristart()
+        prismaristart() # sends to the start of the prismari storyline
     elif choice == "3":
-        quandrixstart()
+        quandrixstart() #sends to the start of the quandrix storyline
     elif choice == "4":
-        silverquillstart()
+        silverquillstart() # sends to the start of the silverquil storyline
     elif choice == "5":
-        witherbloomstart()
+        witherbloomstart() #sends to the start of the witherbloom storyline
     else:
-        print("Invalid choice. Please try again")
+        print("Invalid choice. Please try again") #restarts the function if an answer not defined is chosen
         CollegeChoice()
 
 def loreholdstart():
@@ -32,10 +34,10 @@ def loreholdstart():
     print("2.) Investigate the door")
 
     choice = input("> ")
-    if choice == "1":
+    if choice == "1": # if 1 is chosen, sends to the end of the lorehold storyline
         lorend1()
     elif choice == "2":
-        lore2()
+        loredoor() # if 3 is chosen, sends to the second part of the lorehold storyline
     else:
             print("Invalid choice. Please try again")
             loreholdstart()
@@ -43,9 +45,9 @@ def loreholdstart():
 def lorend1():
     print("You decide to ignore the door and go to your lecture.\nWhen you get back the door is gone.\nLater you hear that one of your classmates went missing.")
     print("You later graduate with a degree in Archeology.")
-    print("You have acchived a mid ending.")
+    print("You have acchived a mid ending.") # ending of the lorehold storyline
 
-def lore2():
+def loredoor():
     print("You decide that investiating this door is more important than your lecture on ancient Ravnica.")
     print("The style of door isn't recognizable to you.\nThe handle seems to be very ornate, even if it looks a bit tarnished.")
     print("What do you do now?")
@@ -54,12 +56,12 @@ def lore2():
 
     choice = input("> ")
     if choice == "1":
-        house1()
+        house1() # sends to the start of the house
     elif choice == "2":
-        lorend1()
+        lorend1() #sends to the end of the lorehold storyline
     else:
         print("Invalid choice. Please try again")
-        lore2()
+        loredoor()
 
 
 def prismaristart():
@@ -71,9 +73,9 @@ def prismaristart():
 
     choice = input("> ")
     if choice == "1":
-        prisend()
+        prisend() # sends to the end of the prismari storyline
     elif choice == "2":
-        pris2()
+        prisdoor() # sends to the second part of the prismari storyline
     else:
         print("Invalid choice. Please try again.")
         prismaristart()
@@ -84,9 +86,9 @@ def prisend():
     print("You return to your dorm later to investigate the door and find that the door is no longer there.")
     print("You later find out that one of the teachers went missing, and the last place they were seen was in your dorm.")
     print("Maybe its best you didnt investigate the door.")
-    print("You have acchived a mid ending")
+    print("You have acchived a mid ending") # end of the prismari storyline
 
-def pris2():
+def prisdoor():
     print("You aproach the door.")
     print("The door is covered in miniature paitings of moths.")
     print("The doorknob is very ornate.")
@@ -96,12 +98,12 @@ def pris2():
 
     choice = input("> ")
     if choice == "1":
-        prisend()
+        prisend() # sends to the end of the prismari storyline
     elif choice == "2":
-        house1()
+        house1() # sends to the beginning of the house storyline
     else:
         print("Invalid choice. Please try again.")
-        pris2()
+        prisdoor()
 
 
 def quandrixstart():
@@ -113,7 +115,7 @@ def quandrixstart():
 
     choice = input("> ")
     if choice == "A":
-        quanddoor()
+        quanddoor() # sends to the second part of the quandrix storyline
     elif choice == "B":
         quandrixend()
     else:
@@ -128,16 +130,16 @@ def quanddoor():
 
     choice = input("> ")
     if choice == "1":
-        quandrixend()
+        quandrixend() # sends to the end of the quandrix storyline
     elif choice == "2":
-        house1()
+        house1() # sends to the house storyline
     else:
         print("Invalid choice. Please try again")
         quanddoor()
 
 def quandrixend():
     print("You decide to ignore the door and head to your lecture. As you are rushing down the stairs, you miss a step and tumble down the stairs.\nYou end up breaking your neck and die.")
-    print("YOU HAVE DIED")
+    print("YOU HAVE DIED") # ending for the quandrix storyline
 
 
 def silverquillstart():
@@ -149,9 +151,9 @@ def silverquillstart():
 
     choice = input("> ")
     if choice == "1":
-        silverdoor()
+        silverdoor() # sends to the second part of the silverquill storyline
     elif choice == "2":
-        silverend()
+        silverend() # sends to the end of the silverquill storyline
     else:
         print("Invalid choice. Please try again.")
         silverquillstart()
@@ -164,21 +166,55 @@ def silverdoor():
 
     choice = input("> ")
     if choice == "1":
-        silverend()
+        silverend() # sends to the end of the silverquill storyline
     elif choice == "2":
-        house1()
+        house1() # sends to the beginning of the house storyline
     else:
         print("Invalid choice. Please try again")
         silverdoor()
 
 def silverend():
     print("You decide to ignore the door. You head to your debate and absolutley destroy your opponent.")
-    print("You have acchived the debatable ending.")
+    print("You have acchived the debatable ending.") # end of the silverquill ending
               
 
 
 def witherbloomstart():
-    print("")
+    print("You awaken in your hammock. The entierty of your dorm is covered in plants from all accross the planes.")
+    print("As you get ready to head to your first demonstration of the day, you see a door at the end of the hallway.")
+    print("What do you do?")
+    print("1.) Investigate the door")
+    print("2.) Go to your demonstration")
+
+    choice = input("> ")
+    if choice == "1":
+        witherdoor() # sends to the second part of the witherbloom storyline
+    elif choice == "2":
+        witherend() # sends to the end of the witherbloom storyline
+    else:
+        print("Invalid choice. Please try again.")
+        witherbloomstart()
+
+def witherdoor():
+    print("The door appears to be made of a rotting oak, and the knob is made of nickle. There also appears to be Death's Head Hawkmoths painted on the wood.")
+    print("What do you do?")
+    print("1.) Go to the demonstration")
+    print("2.) Open the door")
+
+    choice = input("> ")
+    if choice == "1":
+        witherend() # sends to the end of the witherbloom storyline
+    elif choice == "2":
+        house1() # sends to the beginning of the house storyline
+    else:
+        print("Invalid choice. Please try again.")
+        witherdoor()
+
+def witherend():
+    print("You decide to ignore the door. You later are poisoned by your rival and die.")
+    print("You have achived the poisoned ending")
+
+
 
 def house1():
     print("You open the door. Inside is an abandoned hallway. On the walls are pictures of a happy family.")
@@ -195,4 +231,46 @@ def house1():
         print("Invalid choice. Please try again.")
         house1()
 
+def house2():
+    print("As you proceed farther into the hallway, the faces in the pictures begin to melt.")
+    sleep (3); print("The door suddenly slams shut.")
+    print("As you travel down the hallway you come to a three way for in the hallway.")
+    sleep (1); print("Which way do you go?")
+    print("1.) Left")
+    print("2.) Straight")
+    print("3.) Right")
+    print("4.) Back the way you came")
 
+    choice = input("> ")
+    if choice == "1":
+        pool()
+    elif choice == "2":
+        elevator()
+    elif choice == "3":
+        office()
+    elif choice == "4":
+        sauna()
+    else:
+        print("Invalid choice. Please try again.")
+        house2()
+
+def forcedenter():
+    print("The door suddenly slams shut and vanishes right before your eyes.")
+    print("Do you go,")
+    print("1.) Forward")
+    print("2.) Backward")
+
+    choice = input("> ")
+
+    if choice == "1":
+        house2
+    elif choice == "2":
+        house2()
+    else:
+        print("Invalid choice. Try again")
+        forcedenter()
+
+
+
+
+CollegeChoice()
