@@ -25,6 +25,8 @@ def CollegeChoice():
         print("Invalid choice. Please try again") #restarts the function if an answer not defined is chosen
         CollegeChoice()
 
+
+
 def loreholdstart():
     print("You awaken in your dorm.\nVaroius books line your bookshelves. Most of which are about various civilizations across the planes.")
     print("As you exit your dorm to go to the first lecture of the day, you see an unusual door at the end of the hallway.")
@@ -292,6 +294,24 @@ def lockerroom():
     else:
         print("Invalid choice. Try again")
         lockerroom()
+
+def locker():
+    print("You go to a locker and it appears to be locked with a number lock.")
+    print("What do you do?")
+    print("1.) Go to the pool")
+    print("2.) Open the locker")
+    print("3.) Leave the locker room")
+
+    choice = input("> ")
+    if choice == "1":
+        pool()
+    elif choice == "2":
+        lockerpuzzle()
+    elif choice =="3":
+        fork()
+    else:
+        print("Invalid choice. Please try again.")
+        locker()
 
 def pool():
     print("You push open the door and find an olympic sized pool")
