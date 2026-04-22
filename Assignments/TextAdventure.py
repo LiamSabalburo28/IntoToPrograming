@@ -216,6 +216,8 @@ def witherend():
 
 
 
+
+
 def house1():
     print("You open the door. Inside is an abandoned hallway. On the walls are pictures of a happy family.")
     print("What do you do?")
@@ -236,20 +238,20 @@ def house2():
     sleep (3); print("The door suddenly slams shut.")
     print("As you travel down the hallway you come to a three way for in the hallway.")
     sleep (1); print("Which way do you go?")
-    print("1.) Left")
-    print("2.) Straight")
-    print("3.) Right")
-    print("4.) Back the way you came")
+    print("1.) North")
+    print("2.) East")
+    print("3.) South")
+    print("4.) West")
 
     choice = input("> ")
     if choice == "1":
-        pool()
-    elif choice == "2":
         elevator()
-    elif choice == "3":
+    elif choice == "2":
         office()
-    elif choice == "4":
+    elif choice == "3":
         sauna()
+    elif choice == "4":
+        lockerroom()
     else:
         print("Invalid choice. Please try again.")
         house2()
@@ -271,6 +273,28 @@ def forcedenter():
         forcedenter()
 
 
+
+def lockerroom():
+    print("As you turn left you enter what looks like an abandoned locker room for a pool.")
+    sleep(1); print("The stench of chlorine fills the air. At the other end of the locker room is a door, probably leading to a pool.")
+    print("What do you do?")
+    print("1.) Head back to the hallway")
+    print("2.) Head to the pool")
+    print("3.) Attempt to open a locker")
+
+    choice = input("> ")
+    if choice == "1":
+        house2()
+    elif choice == "2":
+        pool()
+    elif choice == "3":
+        locker()
+    else:
+        print("Invalid choice. Try again")
+        lockerroom()
+
+def pool():
+    print("You push open the door and find an olympic sized pool")
 
 
 CollegeChoice()
