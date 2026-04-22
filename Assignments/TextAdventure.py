@@ -274,6 +274,28 @@ def forcedenter():
         print("Invalid choice. Try again")
         forcedenter()
 
+def fork():
+    print("You return to the fork in the hallway.")
+    print("Which way do you go?")
+    print("1.) North")
+    print("2.) East")
+    print("2.) East")
+    print("3.) South")
+    print("4.) West")
+
+    choice = input("> ")
+    if choice == "1":
+        elevator()
+    elif choice == "2":
+        office()
+    elif choice == "3":
+        sauna()
+    elif choice == "4":
+        lockerroom()
+    else:
+        print("Invalid choice. Please try again.")
+        fork()
+
 
 
 def lockerroom():
@@ -326,10 +348,16 @@ def pool():
     elif choice == "2":
         poolcheck()
     elif choice == "3":
-        pooltolocker()
+        fork()
     else:
         print("Invalid choice. Please try again.")
         pool()
+
+def lockerpuzzle():
+    print("The locker you stopped in front of has a three number lock.")
+    print("What is the code?")
+    
+
 
 
 CollegeChoice()
