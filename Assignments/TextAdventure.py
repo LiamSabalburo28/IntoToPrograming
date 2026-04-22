@@ -27,6 +27,18 @@ def CollegeChoice():
         print("Invalid choice. Please try again") #restarts the function if an answer not defined is chosen
         CollegeChoice()
 
+def devop():
+    print("Just kidding. There are no developer options.")
+    sleep(10); print("""
+888                                
+888                                
+888                                
+888 .d88b. .d8888b  .d88b. 888d888 
+888d88""88b88K     d8P  Y8b888P"   
+888888  888"Y8888b.88888888888     
+888Y88..88P     X88Y8b.    888     
+888 "Y88P"  88888P' "Y8888 888    
+""")
 
 
 def loreholdstart():
@@ -144,6 +156,28 @@ def quanddoor():
 def quandrixend():
     print("You decide to ignore the door and head to your lecture. As you are rushing down the stairs, you miss a step and tumble down the stairs.\nYou end up breaking your neck and die.")
     print("YOU HAVE DIED") # ending for the quandrix storyline
+    sleep(5); print("""
+⠀⠀⠀⠀⠀⠀⠀⣀⣤⡖⠖⠎⠍⢭⢫⣋⡋⡗⣒⠤⣀⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣖⣯⣷⣥⣶⢪⣿⢛⡅⣇⣷⢫⡟⣰⣯⣔⡩⡑⠢⣄⠀⠀⠀
+⠀⠀⠀⡜⢹⣯⣟⣻⢹⣏⢿⡻⡷⣫⡯⡟⣽⣷⣕⣓⡚⢙⢲⡗⡌⢧⡀⠀
+⠀⠀⢠⠷⣿⣝⣗⡿⣷⡳⣏⡏⢥⠆⡷⡖⢭⣮⣧⣬⣶⣟⣾⢬⡿⡆⣣⠃
+⠀⢀⣸⢀⢿⠟⣿⣟⡗⡣⡾⣗⢄⣛⠱⣯⣽⠟⣜⣍⢪⡽⢯⣙⣧⠄⢼⡆
+⠀⠀⡇⣽⡻⠛⡿⠡⠭⠥⡥⣍⠒⡙⢻⣇⠛⢋⢛⣋⣋⣗⠓⠞⢛⣢⣻⢱
+⠀⠁⡯⣿⣕⡛⠆⠀⠀⠀⠀⠈⢳⢹⡷⡏⠁⠉⢃⢟⡂⠀⠀⠀⠀⠈⢩⣸
+⠀⢤⣋⡗⣇⣢⠀⠀⠸⣯⣢⡄⠈⢐⡇⠇⠀⠀⢆⡺⡆⢠⢻⣷⡇⠀⢱⣸
+⠀⡝⡿⡿⠴⣘⠀⠀⠀⠀⣤⣀⡁⡜⡇⡃⠀⠀⢃⢴⡃⠈⠉⠉⠁⠀⢸⢼
+⠀⣷⣇⡟⡇⡫⠀⠀⠀⡄⠀⠙⠳⣗⠃⡅⠀⠀⢅⣛⡇⠀⠀⡆⢔⡆⢹⢸
+⠀⡯⣬⣇⣛⡇⠀⠀⠀⡗⣆⠀⠨⠷⡑⠄⠀⠀⢂⣻⡁⠀⠀⠣⡁⡆⣾⢸
+⠀⡇⢧⡇⡶⡗⡂⠂⡦⣏⣻⣆⣀⠠⢛⡄⠀⠀⠅⡧⡀⠀⠀⣃⢂⡂⣵⢨
+⠀⡗⣻⢟⣻⡻⡧⣇⣶⢪⣽⣯⢯⣷⡷⣏⣝⣍⡏⣏⣃⣐⢀⣳⣽⣦⣉⢸
+⠀⡗⣞⡍⡏⠜⢭⠙⢎⣿⣿⣟⣃⢃⣕⣹⢽⣿⠿⡿⢻⡟⠿⣯⢿⠏⠍⢰
+⠀⡇⢚⡆⣻⠎⢂⡃⣠⢌⢓⠡⡂⡀⡦⡛⢘⡲⣋⣹⢐⢇⡷⠟⣭⠳⠣⢸
+⠀⡗⢦⡍⢷⠇⠂⠘⠸⣇⣏⢆⡴⣁⠄⣹⡏⠄⢵⢴⣂⡫⢘⣉⣰⠆⡁⢸
+⠀⡂⢯⢨⠯⠘⢒⡿⡥⣛⣡⡒⡱⣶⣂⡏⣓⡜⢖⠜⣧⣋⣽⡖⣧⡃⡂⢸
+⠀⣒⠭⢍⢃⠀⡉⡏⢗⡷⣺⡷⡎⠂⣆⡁⣒⡖⡰⣱⠧⢆⢅⣢⣟⡿⡁⢸
+⠀⣽⡇⡲⢀⣋⣇⢹⣗⣠⣌⡈⣲⣁⣆⡽⣃⣔⢅⣭⣙⣭⢞⡙⡝⠬⠄⢸
+⠒⠊⠁⡟⠨⢝⢓⢛⣤⡂⣁⠤⡉⡁⢅⠁⡡⢀⠍⣍⠡⢋⡥⣍⡈⠁⠁⢘
+""")
 
 
 def silverquillstart():
@@ -342,7 +376,7 @@ def pool():
     print("What do you do?")
     print("1.) Go swimming")
     print("2.) Check the water")
-    print("3.) Go back to the locker room")
+    print("3.) Go back to the fork")
 
     choice = input("> ")
     if choice == "1":
@@ -409,10 +443,123 @@ def no():
             no()
 
 def openlocker():
-    print
+    print("You open the locker and find nothing inside.")
+    print("What do you do now?")
+    print("1.) Go to the pool")
+    print("2.) Go back to the fork")
+
+    choice = input("> ")
+    if choice == "1":
+        pool()
+    elif choice == "2":
+        fork()
+    else:
+        print("Invalid choice. Please try again.")
+        openlocker()
+
 
 def locker2():
-    print
+    print(" You stand in front of the locker, attempting to figure out the combination.")
+    print("What is the code?")
+    print("1.) 18-36-11")
+    print("2.) 22-01-33")
+    print("3.) 05-09-16")
+    print("4.) 06-06-06")
+
+    choice = input("> ")
+    if choice == "1":
+        print("The lock didnt budge.")
+        print("Try again? (yes or no)")
+        yesno()
+    elif choice == "2":
+        print("The lock didnt budge.")
+        print("Try again? (yes or no)")
+        yesno()
+    elif choice == "3":
+        print("The lock didnt budge.")
+        print("Try again? (yes or no)")
+        yesno()
+    elif choice == "4":
+        print("The lock opened")
+        openlocker()
+    elif choice == "open":
+        sleep(10); print("You are sneaky. I'll open the locker this time...")
+        openlocker()
+    else:
+        print("Invalid choice. Please try again.")
+        locker2()
+
+def poolend():
+    print("You jump in the pool. You failed to notice that the pool has sharks in it.")
+    sleep(2); print("You are eaten by the sharks.")
+    print("You have died.")
+    sleep(2); print("""
+⠀⠀⠀⠀⠀⠀⠀⣀⣤⡖⠖⠎⠍⢭⢫⣋⡋⡗⣒⠤⣀⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣖⣯⣷⣥⣶⢪⣿⢛⡅⣇⣷⢫⡟⣰⣯⣔⡩⡑⠢⣄⠀⠀⠀
+⠀⠀⠀⡜⢹⣯⣟⣻⢹⣏⢿⡻⡷⣫⡯⡟⣽⣷⣕⣓⡚⢙⢲⡗⡌⢧⡀⠀
+⠀⠀⢠⠷⣿⣝⣗⡿⣷⡳⣏⡏⢥⠆⡷⡖⢭⣮⣧⣬⣶⣟⣾⢬⡿⡆⣣⠃
+⠀⢀⣸⢀⢿⠟⣿⣟⡗⡣⡾⣗⢄⣛⠱⣯⣽⠟⣜⣍⢪⡽⢯⣙⣧⠄⢼⡆
+⠀⠀⡇⣽⡻⠛⡿⠡⠭⠥⡥⣍⠒⡙⢻⣇⠛⢋⢛⣋⣋⣗⠓⠞⢛⣢⣻⢱
+⠀⠁⡯⣿⣕⡛⠆⠀⠀⠀⠀⠈⢳⢹⡷⡏⠁⠉⢃⢟⡂⠀⠀⠀⠀⠈⢩⣸
+⠀⢤⣋⡗⣇⣢⠀⠀⠸⣯⣢⡄⠈⢐⡇⠇⠀⠀⢆⡺⡆⢠⢻⣷⡇⠀⢱⣸
+⠀⡝⡿⡿⠴⣘⠀⠀⠀⠀⣤⣀⡁⡜⡇⡃⠀⠀⢃⢴⡃⠈⠉⠉⠁⠀⢸⢼
+⠀⣷⣇⡟⡇⡫⠀⠀⠀⡄⠀⠙⠳⣗⠃⡅⠀⠀⢅⣛⡇⠀⠀⡆⢔⡆⢹⢸
+⠀⡯⣬⣇⣛⡇⠀⠀⠀⡗⣆⠀⠨⠷⡑⠄⠀⠀⢂⣻⡁⠀⠀⠣⡁⡆⣾⢸
+⠀⡇⢧⡇⡶⡗⡂⠂⡦⣏⣻⣆⣀⠠⢛⡄⠀⠀⠅⡧⡀⠀⠀⣃⢂⡂⣵⢨
+⠀⡗⣻⢟⣻⡻⡧⣇⣶⢪⣽⣯⢯⣷⡷⣏⣝⣍⡏⣏⣃⣐⢀⣳⣽⣦⣉⢸
+⠀⡗⣞⡍⡏⠜⢭⠙⢎⣿⣿⣟⣃⢃⣕⣹⢽⣿⠿⡿⢻⡟⠿⣯⢿⠏⠍⢰
+⠀⡇⢚⡆⣻⠎⢂⡃⣠⢌⢓⠡⡂⡀⡦⡛⢘⡲⣋⣹⢐⢇⡷⠟⣭⠳⠣⢸
+⠀⡗⢦⡍⢷⠇⠂⠘⠸⣇⣏⢆⡴⣁⠄⣹⡏⠄⢵⢴⣂⡫⢘⣉⣰⠆⡁⢸
+⠀⡂⢯⢨⠯⠘⢒⡿⡥⣛⣡⡒⡱⣶⣂⡏⣓⡜⢖⠜⣧⣋⣽⡖⣧⡃⡂⢸
+⠀⣒⠭⢍⢃⠀⡉⡏⢗⡷⣺⡷⡎⠂⣆⡁⣒⡖⡰⣱⠧⢆⢅⣢⣟⡿⡁⢸
+⠀⣽⡇⡲⢀⣋⣇⢹⣗⣠⣌⡈⣲⣁⣆⡽⣃⣔⢅⣭⣙⣭⢞⡙⡝⠬⠄⢸
+⠒⠊⠁⡟⠨⢝⢓⢛⣤⡂⣁⠤⡉⡁⢅⠁⡡⢀⠍⣍⠡⢋⡥⣍⡈⠁⠁⢘
+""")
+    
+def poolcheck():
+    print("As you look into the pool you can see sharks swimming in the pool.")
+    print("What do you do?")
+    print("1.) Jump in the pool, despite the fact that there are sharks.")
+    print("2.) Go back to the fork")
+    print("3.) Look for another door")
+
+    choice = input("> ")
+    if choice =="1":
+        pooldeath()
+    elif choice == "2":
+        fork()
+    elif choice == "3":
+        pooltwodoor()
+    else:
+        print("Invalid choice. Please try again.")
+        poolcheck()
+
+def pooldeath():
+    print("You jump in the pool. Ignoring the fact that there are sharks in the pool.")
+    sleep(2); print("You are eaten by said sharks.")
+    print("You have died.")
+    sleep(2); print("""
+⠀⠀⠀⠀⠀⠀⠀⣀⣤⡖⠖⠎⠍⢭⢫⣋⡋⡗⣒⠤⣀⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣖⣯⣷⣥⣶⢪⣿⢛⡅⣇⣷⢫⡟⣰⣯⣔⡩⡑⠢⣄⠀⠀⠀
+⠀⠀⠀⡜⢹⣯⣟⣻⢹⣏⢿⡻⡷⣫⡯⡟⣽⣷⣕⣓⡚⢙⢲⡗⡌⢧⡀⠀
+⠀⠀⢠⠷⣿⣝⣗⡿⣷⡳⣏⡏⢥⠆⡷⡖⢭⣮⣧⣬⣶⣟⣾⢬⡿⡆⣣⠃
+⠀⢀⣸⢀⢿⠟⣿⣟⡗⡣⡾⣗⢄⣛⠱⣯⣽⠟⣜⣍⢪⡽⢯⣙⣧⠄⢼⡆
+⠀⠀⡇⣽⡻⠛⡿⠡⠭⠥⡥⣍⠒⡙⢻⣇⠛⢋⢛⣋⣋⣗⠓⠞⢛⣢⣻⢱
+⠀⠁⡯⣿⣕⡛⠆⠀⠀⠀⠀⠈⢳⢹⡷⡏⠁⠉⢃⢟⡂⠀⠀⠀⠀⠈⢩⣸
+⠀⢤⣋⡗⣇⣢⠀⠀⠸⣯⣢⡄⠈⢐⡇⠇⠀⠀⢆⡺⡆⢠⢻⣷⡇⠀⢱⣸
+⠀⡝⡿⡿⠴⣘⠀⠀⠀⠀⣤⣀⡁⡜⡇⡃⠀⠀⢃⢴⡃⠈⠉⠉⠁⠀⢸⢼
+⠀⣷⣇⡟⡇⡫⠀⠀⠀⡄⠀⠙⠳⣗⠃⡅⠀⠀⢅⣛⡇⠀⠀⡆⢔⡆⢹⢸
+⠀⡯⣬⣇⣛⡇⠀⠀⠀⡗⣆⠀⠨⠷⡑⠄⠀⠀⢂⣻⡁⠀⠀⠣⡁⡆⣾⢸
+⠀⡇⢧⡇⡶⡗⡂⠂⡦⣏⣻⣆⣀⠠⢛⡄⠀⠀⠅⡧⡀⠀⠀⣃⢂⡂⣵⢨
+⠀⡗⣻⢟⣻⡻⡧⣇⣶⢪⣽⣯⢯⣷⡷⣏⣝⣍⡏⣏⣃⣐⢀⣳⣽⣦⣉⢸
+⠀⡗⣞⡍⡏⠜⢭⠙⢎⣿⣿⣟⣃⢃⣕⣹⢽⣿⠿⡿⢻⡟⠿⣯⢿⠏⠍⢰
+⠀⡇⢚⡆⣻⠎⢂⡃⣠⢌⢓⠡⡂⡀⡦⡛⢘⡲⣋⣹⢐⢇⡷⠟⣭⠳⠣⢸
+⠀⡗⢦⡍⢷⠇⠂⠘⠸⣇⣏⢆⡴⣁⠄⣹⡏⠄⢵⢴⣂⡫⢘⣉⣰⠆⡁⢸
+⠀⡂⢯⢨⠯⠘⢒⡿⡥⣛⣡⡒⡱⣶⣂⡏⣓⡜⢖⠜⣧⣋⣽⡖⣧⡃⡂⢸
+⠀⣒⠭⢍⢃⠀⡉⡏⢗⡷⣺⡷⡎⠂⣆⡁⣒⡖⡰⣱⠧⢆⢅⣢⣟⡿⡁⢸
+⠀⣽⡇⡲⢀⣋⣇⢹⣗⣠⣌⡈⣲⣁⣆⡽⣃⣔⢅⣭⣙⣭⢞⡙⡝⠬⠄⢸
+⠒⠊⠁⡟⠨⢝⢓⢛⣤⡂⣁⠤⡉⡁⢅⠁⡡⢀⠍⣍⠡⢋⡥⣍⡈⠁⠁⢘
+""")
 
 
 CollegeChoice()
