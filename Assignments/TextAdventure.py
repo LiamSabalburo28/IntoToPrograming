@@ -506,20 +506,13 @@ def no():
             no()
 
 def openlocker():
-    print("You open the locker and find nothing inside.")
-    print("What do you do now?")
-    print("1.) Go to the pool")
-    print("2.) Go back to the fork")
+    print("You open the locker and can't find ", end="", flush=True)
 
-    choice = input("> ")
-    if choice == "1":
-        pool()
-    elif choice == "2":
-        fork()
-    else:
-        print("Invalid choice. Please try again.")
-        openlocker()
-
+    text = "y o u r   h a n d"
+    for char in text:
+        print(char, end="", flush=True)
+        time.sleep(1)
+        
 
 def locker2():
     print(" You stand in front of the locker, attempting to figure out the combination.")
@@ -640,6 +633,56 @@ def pooltwodoor():
         print("Invalid choice. Please try again.")
         pooltwodoor()
 
+
+def salon():
+    print("You push open the left door and find yourself in a lounge.")
+    print("Various bottles line the shelves.")
+    print("What do you do?")
+    print("1.) Investigate the bottles")
+    print("2.) Grab a bottle and chug it")
+    print("3.) Go back to the pool")
+    print("4.) Lie down on one of the couches")
+
+    choice = input("> ")
+    if choice == "1":
+        investigatebottle()
+    elif choice == "2":
+        bottledeath()
+    elif choice == "3":
+        pool()
+    elif choice == "4":
+        couchdeath()
+    else:
+        print("Invalid choice. Please try again")
+
+def investigatebottle():
+    print("On one of the bottles is labeled Aqua Tofana. As you look at more bottles you realize that they are poisons.")
+    print("Good thing you didn't drink any.")
+    print("What do you do now?")
+    print("1.) Go back to the pool")
+    print("2.) Go lie down on one of the couches")
+
+    choice = input("> ")
+    if choice == "1":
+        pool()
+    elif choice == "2":
+        couchdeath()
+    else:
+        print("Invalid option. Please try again.")
+        investigatebottle()
+
+def bottledeath():
+    print("You start to chug one of the bottles. What could possibly go wrong?")
+    sleep(2); print("You soon find out what could possibly go wrong.")
+    print("The bottle contained poison.")
+    print("At least you died quickly...")
+
+def couchdeath():
+    print("You lay down on one of the couches. It's supprisingly comfy.")
+    print("You close your eyes,")
+    sleep(5); print("and you don't wake up again")
+
+    
 
 
 CollegeChoice()
