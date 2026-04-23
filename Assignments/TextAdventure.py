@@ -334,6 +334,46 @@ def fork():
 
 
 
+def elevator():
+    print("You choose to go north.")
+    sleep(5); print("After about three minutes of walking, you come upon an elevator and some stairs.")
+    print("Which one will you take?")
+    sleep(1); print("Elevator")
+    sleep(1); print("Stairs")
+    sleep(1); print("Look for another door (Type 3)")
+    
+    choice = input("> ")
+    if choice == "elevator":
+        escape()
+    elif choice == "Elevator":
+        escape()
+    elif choice == "stairs":
+        stairescape()
+    elif choice == "Stairs":
+        stairescape()
+    elif choice == "3":
+        elevatorhallway()
+    else:
+        print("Invalid choice. Please try again.")
+        elevator()
+
+def escape():
+    print("You enter the elevator and press a random button.")
+    print("After a while the doors open and you step back out into your dorm hallway.")
+    sleep(3); print("You are confused as to what exactly happened, and never figure out where you were or where that strange house was.")
+    print("You survived The House.")
+    print("You have acchived the survivor ending.")
+
+def stairescape():
+    print("You climb the stairs.")
+    sleep(2); print("After a while the stairs change from rotting wood to the stairs back in your dorm.")
+    print("As you get to the top of the stairs they dissapear.")
+    sleep(3); print("You are confused as to what exactly happened, and never figure out where you were or where that strange house was.")
+    print("You survived The House.")
+    print("You have acchived the survivor ending.")
+
+
+
 def lockerroom():
     print("As you turn left you enter what looks like an abandoned locker room for a pool.")
     sleep(1); print("The stench of chlorine fills the air. At the other end of the locker room is a door, probably leading to a pool.")
@@ -560,6 +600,23 @@ def pooldeath():
 ⠀⣽⡇⡲⢀⣋⣇⢹⣗⣠⣌⡈⣲⣁⣆⡽⣃⣔⢅⣭⣙⣭⢞⡙⡝⠬⠄⢸
 ⠒⠊⠁⡟⠨⢝⢓⢛⣤⡂⣁⠤⡉⡁⢅⠁⡡⢀⠍⣍⠡⢋⡥⣍⡈⠁⠁⢘
 """)
+
+def pooltwodoor():
+    print("It takes you a while but you eventually you find a door that leads to another hallway.")
+    sleep(1); print("You travel along this hallway for about ten minutes before the path splits off.")
+    print("Which way will you go?")
+    print("1.) Left")
+    print("2.) Right")
+
+    choice = input("> ")
+    if choice == "1":
+        salon()
+    elif choice == "2":
+        valgavoth()
+    else:
+        print("Invalid choice. Please try again.")
+        pooltwodoor()
+
 
 
 CollegeChoice()
