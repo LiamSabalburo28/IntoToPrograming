@@ -340,7 +340,6 @@ def elevator():
     print("Which one will you take?")
     sleep(1); print("Elevator")
     sleep(1); print("Stairs")
-    sleep(1); print("Look for another door (Type 3)")
     
     choice = input("> ")
     if choice == "elevator":
@@ -351,8 +350,6 @@ def elevator():
         stairescape()
     elif choice == "Stairs":
         stairescape()
-    elif choice == "3":
-        elevatorhallway()
     else:
         print("Invalid choice. Please try again.")
         elevator()
@@ -372,30 +369,7 @@ def stairescape():
     print("You survived The House.")
     print("You have acchived the survivor ending.")
 
-def elevatorhallway():
-    print("You find two doors.")
-    print("What will you do?")
-    print("1.) Take the left door")
-    print("2.) Take the right door")
-    print("3.) Go back to the fork")
-    print("4.) Take the elevator")
-    print("5.) Take the stairs")
 
-    choice = input("> ")
-    if choice == "1":
-        idkwhatleftdooris()
-    elif choice == "2":
-        idkwhatrightdooris()
-    elif choice == "3":
-        fork()
-    elif choice == "4":
-        escape()
-    elif choice == "5":
-        stairescape()
-    else:
-        print("Invalid choice. Please try again")
-        elevatorhallway()
-    
 
 def lockerroom():
     print("As you turn left you enter what looks like an abandoned locker room for a pool.")
@@ -682,7 +656,76 @@ def couchdeath():
     print("You close your eyes,")
     sleep(5); print("and you don't wake up again")
 
-    
+
+def valgavoth():
+    print("You open the right door, the chamber you step into is large and airy, the ceiling choked with drifts of white webbing.\nThere are shapes snared there. Don't look too closely. In the distance, there is a sound like wings.")
+    print("As you turn you see a giant moth.")
+    print("That is the last thing you see before you die in a flash of bright light.")
+    sleep(2); print("""
+⠀⠀⠀⠀⠀⠀⠀⣀⣤⡖⠖⠎⠍⢭⢫⣋⡋⡗⣒⠤⣀⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣖⣯⣷⣥⣶⢪⣿⢛⡅⣇⣷⢫⡟⣰⣯⣔⡩⡑⠢⣄⠀⠀⠀
+⠀⠀⠀⡜⢹⣯⣟⣻⢹⣏⢿⡻⡷⣫⡯⡟⣽⣷⣕⣓⡚⢙⢲⡗⡌⢧⡀⠀
+⠀⠀⢠⠷⣿⣝⣗⡿⣷⡳⣏⡏⢥⠆⡷⡖⢭⣮⣧⣬⣶⣟⣾⢬⡿⡆⣣⠃
+⠀⢀⣸⢀⢿⠟⣿⣟⡗⡣⡾⣗⢄⣛⠱⣯⣽⠟⣜⣍⢪⡽⢯⣙⣧⠄⢼⡆
+⠀⠀⡇⣽⡻⠛⡿⠡⠭⠥⡥⣍⠒⡙⢻⣇⠛⢋⢛⣋⣋⣗⠓⠞⢛⣢⣻⢱
+⠀⠁⡯⣿⣕⡛⠆⠀⠀⠀⠀⠈⢳⢹⡷⡏⠁⠉⢃⢟⡂⠀⠀⠀⠀⠈⢩⣸
+⠀⢤⣋⡗⣇⣢⠀⠀⠸⣯⣢⡄⠈⢐⡇⠇⠀⠀⢆⡺⡆⢠⢻⣷⡇⠀⢱⣸
+⠀⡝⡿⡿⠴⣘⠀⠀⠀⠀⣤⣀⡁⡜⡇⡃⠀⠀⢃⢴⡃⠈⠉⠉⠁⠀⢸⢼
+⠀⣷⣇⡟⡇⡫⠀⠀⠀⡄⠀⠙⠳⣗⠃⡅⠀⠀⢅⣛⡇⠀⠀⡆⢔⡆⢹⢸
+⠀⡯⣬⣇⣛⡇⠀⠀⠀⡗⣆⠀⠨⠷⡑⠄⠀⠀⢂⣻⡁⠀⠀⠣⡁⡆⣾⢸
+⠀⡇⢧⡇⡶⡗⡂⠂⡦⣏⣻⣆⣀⠠⢛⡄⠀⠀⠅⡧⡀⠀⠀⣃⢂⡂⣵⢨
+⠀⡗⣻⢟⣻⡻⡧⣇⣶⢪⣽⣯⢯⣷⡷⣏⣝⣍⡏⣏⣃⣐⢀⣳⣽⣦⣉⢸
+⠀⡗⣞⡍⡏⠜⢭⠙⢎⣿⣿⣟⣃⢃⣕⣹⢽⣿⠿⡿⢻⡟⠿⣯⢿⠏⠍⢰
+⠀⡇⢚⡆⣻⠎⢂⡃⣠⢌⢓⠡⡂⡀⡦⡛⢘⡲⣋⣹⢐⢇⡷⠟⣭⠳⠣⢸
+⠀⡗⢦⡍⢷⠇⠂⠘⠸⣇⣏⢆⡴⣁⠄⣹⡏⠄⢵⢴⣂⡫⢘⣉⣰⠆⡁⢸
+⠀⡂⢯⢨⠯⠘⢒⡿⡥⣛⣡⡒⡱⣶⣂⡏⣓⡜⢖⠜⣧⣋⣽⡖⣧⡃⡂⢸
+⠀⣒⠭⢍⢃⠀⡉⡏⢗⡷⣺⡷⡎⠂⣆⡁⣒⡖⡰⣱⠧⢆⢅⣢⣟⡿⡁⢸
+⠀⣽⡇⡲⢀⣋⣇⢹⣗⣠⣌⡈⣲⣁⣆⡽⣃⣔⢅⣭⣙⣭⢞⡙⡝⠬⠄⢸
+⠒⠊⠁⡟⠨⢝⢓⢛⣤⡂⣁⠤⡉⡁⢅⠁⡡⢀⠍⣍⠡⢋⡥⣍⡈⠁⠁⢘
+""")
+
+
+
+def office():
+    print("You travel down the eastern hallway and find another door.")
+    print("What will you do?")
+    print("1.) Open the door")
+    print("2.) Go back to the fork")
+
+    choice = input("> ")
+    if choice == "1":
+        officeenter()
+    elif choice == "2":
+        fork()
+    else:
+        print("Invalid choice. Please try again.")
+        office()
+
+def officeenter():
+    print("You step into the office and find the desk covered in papers.")
+    print("What do you do?")
+    print("1.) Examine the papers")
+    print("2.) Leave the office")
+
+    choice = input("> ")
+    if choice == "1":
+        papers()
+    elif choice == "2":
+        fork()
+    else:
+        print("Invalid choice. Please try again.")
+        officeenter()
+
+def papers():
+    print("The papers on top seem to be an employment contract between someone named Euridice and Hades.")
+    print("Hades seems to be employing Euridice for his company")
+    print("The papers seem to hold no importance, and you return to the fork")
+    fork()
+
+
+
+def sauna():
+    print("You push open the door at the end of the hallway")
 
 
 CollegeChoice()
