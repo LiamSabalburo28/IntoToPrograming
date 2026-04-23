@@ -372,7 +372,30 @@ def stairescape():
     print("You survived The House.")
     print("You have acchived the survivor ending.")
 
+def elevatorhallway():
+    print("You find two doors.")
+    print("What will you do?")
+    print("1.) Take the left door")
+    print("2.) Take the right door")
+    print("3.) Go back to the fork")
+    print("4.) Take the elevator")
+    print("5.) Take the stairs")
 
+    choice = input("> ")
+    if choice == "1":
+        idkwhatleftdooris()
+    elif choice == "2":
+        idkwhatrightdooris()
+    elif choice == "3":
+        fork()
+    elif choice == "4":
+        escape()
+    elif choice == "5":
+        stairescape()
+    else:
+        print("Invalid choice. Please try again")
+        elevatorhallway()
+    
 
 def lockerroom():
     print("As you turn left you enter what looks like an abandoned locker room for a pool.")
