@@ -726,6 +726,69 @@ def papers():
 
 def sauna():
     print("You push open the door at the end of the hallway")
+    print("Inside this room are boxes to store things.")
+    print("On the other side there glass door leading to a sauna.")
+    print("What do you do?")
+    print("1.) Examine the boxes")
+    print("2.) Go into the sauna")
+    print("3.) Head back to the fork")
 
+    choice = input("> ")
+    if choice =="1":
+        saunabox()
+    elif choice == "2":
+        saunadeath()
+    elif choice == "3":
+        fork()
+    else:
+        print("Invalid choice. Please try again.")
+        sauna()
+
+def saunabox():
+    print("You examine the box.")
+    print("It appears to be a temporary holding place to store personal belonging in before you enter the sauna.")
+    print("There is nothing in the box.")
+    print("What do you do?")
+    print("1.) Put your stuff in the box")
+    print("2.) Enter the sauna")
+    print("3.) Go back to the fork")
+
+    choice = input("> ")
+    if choice == "1":
+        saunadeath()
+    elif choice == "2":
+        saunadeath()
+    elif choice =="3":
+        fork()
+    else:
+        print("Invalid choice. Please try again.")
+        saunabox()
+       
+def saunadeath():
+    print("You enter the sauna.")
+    sleep(3); print("You fail to notice a broom fall infront of the handle.")
+    print("You are locked in the sauna and are steamed to death.")
+    sleep(2); print("""
+⠀⠀⠀⠀⠀⠀⠀⣀⣤⡖⠖⠎⠍⢭⢫⣋⡋⡗⣒⠤⣀⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣖⣯⣷⣥⣶⢪⣿⢛⡅⣇⣷⢫⡟⣰⣯⣔⡩⡑⠢⣄⠀⠀⠀
+⠀⠀⠀⡜⢹⣯⣟⣻⢹⣏⢿⡻⡷⣫⡯⡟⣽⣷⣕⣓⡚⢙⢲⡗⡌⢧⡀⠀
+⠀⠀⢠⠷⣿⣝⣗⡿⣷⡳⣏⡏⢥⠆⡷⡖⢭⣮⣧⣬⣶⣟⣾⢬⡿⡆⣣⠃
+⠀⢀⣸⢀⢿⠟⣿⣟⡗⡣⡾⣗⢄⣛⠱⣯⣽⠟⣜⣍⢪⡽⢯⣙⣧⠄⢼⡆
+⠀⠀⡇⣽⡻⠛⡿⠡⠭⠥⡥⣍⠒⡙⢻⣇⠛⢋⢛⣋⣋⣗⠓⠞⢛⣢⣻⢱
+⠀⠁⡯⣿⣕⡛⠆⠀⠀⠀⠀⠈⢳⢹⡷⡏⠁⠉⢃⢟⡂⠀⠀⠀⠀⠈⢩⣸
+⠀⢤⣋⡗⣇⣢⠀⠀⠸⣯⣢⡄⠈⢐⡇⠇⠀⠀⢆⡺⡆⢠⢻⣷⡇⠀⢱⣸
+⠀⡝⡿⡿⠴⣘⠀⠀⠀⠀⣤⣀⡁⡜⡇⡃⠀⠀⢃⢴⡃⠈⠉⠉⠁⠀⢸⢼
+⠀⣷⣇⡟⡇⡫⠀⠀⠀⡄⠀⠙⠳⣗⠃⡅⠀⠀⢅⣛⡇⠀⠀⡆⢔⡆⢹⢸
+⠀⡯⣬⣇⣛⡇⠀⠀⠀⡗⣆⠀⠨⠷⡑⠄⠀⠀⢂⣻⡁⠀⠀⠣⡁⡆⣾⢸
+⠀⡇⢧⡇⡶⡗⡂⠂⡦⣏⣻⣆⣀⠠⢛⡄⠀⠀⠅⡧⡀⠀⠀⣃⢂⡂⣵⢨
+⠀⡗⣻⢟⣻⡻⡧⣇⣶⢪⣽⣯⢯⣷⡷⣏⣝⣍⡏⣏⣃⣐⢀⣳⣽⣦⣉⢸
+⠀⡗⣞⡍⡏⠜⢭⠙⢎⣿⣿⣟⣃⢃⣕⣹⢽⣿⠿⡿⢻⡟⠿⣯⢿⠏⠍⢰
+⠀⡇⢚⡆⣻⠎⢂⡃⣠⢌⢓⠡⡂⡀⡦⡛⢘⡲⣋⣹⢐⢇⡷⠟⣭⠳⠣⢸
+⠀⡗⢦⡍⢷⠇⠂⠘⠸⣇⣏⢆⡴⣁⠄⣹⡏⠄⢵⢴⣂⡫⢘⣉⣰⠆⡁⢸
+⠀⡂⢯⢨⠯⠘⢒⡿⡥⣛⣡⡒⡱⣶⣂⡏⣓⡜⢖⠜⣧⣋⣽⡖⣧⡃⡂⢸
+⠀⣒⠭⢍⢃⠀⡉⡏⢗⡷⣺⡷⡎⠂⣆⡁⣒⡖⡰⣱⠧⢆⢅⣢⣟⡿⡁⢸
+⠀⣽⡇⡲⢀⣋⣇⢹⣗⣠⣌⡈⣲⣁⣆⡽⣃⣔⢅⣭⣙⣭⢞⡙⡝⠬⠄⢸
+⠒⠊⠁⡟⠨⢝⢓⢛⣤⡂⣁⠤⡉⡁⢅⠁⡡⢀⠍⣍⠡⢋⡥⣍⡈⠁⠁⢘
+""")
 
 CollegeChoice()
