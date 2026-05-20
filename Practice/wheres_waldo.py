@@ -1,4 +1,4 @@
-with open("names.txt", "r") as file:
+with open("C:/Users/834830/Documents/Intro to Programing/IntoToPrograming/Practice/names.txt", "r") as file:
 
     search_name = input("Enter a name to search for: ").lower()
 
