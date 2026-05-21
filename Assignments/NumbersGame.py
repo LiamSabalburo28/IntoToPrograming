@@ -1,7 +1,7 @@
 import random
 import os
 
-LEADERBOARD_FILE = "leaderboard.txt"
+LEADERBOARD_FILE = "/Users/834830/Documents/Intro to Programing/IntoToPrograming/Assignments/leaderboard.txt"
 
 def load_leaderboard():
     scores = []
